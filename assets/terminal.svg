@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" role="img" aria-label="Terminal running whoami, printing Mostafa's profile as a JavaScript object">
+  <title>whoami</title>
+
+  <defs>
+    <linearGradient id="term-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0A0F1A"/>
+      <stop offset="100%" stop-color="#0C1626"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#16202F"/>
+      <stop offset="100%" stop-color="#111A28"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#A78BFA" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#5EEAD4" stop-opacity="0.8"/>
+    </linearGradient>
+
+    <clipPath id="shell"><rect x="0" y="0" width="1000" height="440" rx="16"/></clipPath>
+
+    <clipPath id="c0"><rect x="44" y="62" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.030;0.100;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c1"><rect x="44" y="100" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.140;0.185;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c2"><rect x="44" y="128" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.195;0.240;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c3"><rect x="44" y="156" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.250;0.295;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c4"><rect x="44" y="184" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.305;0.350;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c5"><rect x="44" y="212" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.360;0.405;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c6"><rect x="44" y="240" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.415;0.460;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c7"><rect x="44" y="268" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.470;0.515;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c8"><rect x="44" y="296" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.525;0.570;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+    <clipPath id="c9"><rect x="44" y="324" height="24" width="0"><animate attributeName="width" dur="22s" repeatCount="indefinite" values="0;0;830;830;0;0" keyTimes="0;0.580;0.625;0.950;0.975;1" calcMode="linear"/></rect></clipPath>
+
+    <style>
+      .m { font-family: "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace; font-size: 15px; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#shell)">
+    <rect width="1000" height="440" fill="url(#term-bg)"/>
+    <rect width="1000" height="40" fill="url(#bar)"/>
+    <rect y="39.5" width="1000" height="1" fill="#1F2A3A"/>
+
+    <circle cx="26" cy="20" r="6" fill="#FF5F57"/>
+    <circle cx="48" cy="20" r="6" fill="#FEBC2E"/>
+    <circle cx="70" cy="20" r="6" fill="#28C840"/>
+    <text class="m" x="500" y="25" text-anchor="middle" font-size="12.5" fill="#64748B">mostafa@dev &#8212; zsh</text>
+
+    <g clip-path="url(#c0)"><text class="m" x="44" y="80"><tspan fill="#475569">$ </tspan><tspan fill="#5EEAD4">whoami</tspan></text></g>
+    <g clip-path="url(#c1)"><text class="m" x="44" y="118"><tspan fill="#C4B5FD">const </tspan><tspan fill="#7DD3FC">mostafa</tspan><tspan fill="#475569"> = </tspan><tspan fill="#475569">{</tspan></text></g>
+    <g clip-path="url(#c2)"><text class="m" x="44" y="146"><tspan fill="#5EEAD4">  role</tspan><tspan fill="#475569">:      </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">Software Engineer &#183; Full-Stack Web Developer</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c3)"><text class="m" x="44" y="174"><tspan fill="#5EEAD4">  education</tspan><tspan fill="#475569">: </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">BSc Computer Science &amp; AI, Cairo University &#183; 3.61/4.00</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c4)"><text class="m" x="44" y="202"><tspan fill="#5EEAD4">  lastRole</tspan><tspan fill="#475569">:  </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">SWE Intern @ 4Sale (q84sale.com) &#183; Jul&#8211;Aug 2026 &#183; complete</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c5)"><text class="m" x="44" y="230"><tspan fill="#5EEAD4">  stack</tspan><tspan fill="#475569">:     </tspan><tspan fill="#475569">[</tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">React</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">TypeScript</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">Next.js</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">Node.js</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">Go</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">]</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c6)"><text class="m" x="44" y="258"><tspan fill="#5EEAD4">  learning</tspan><tspan fill="#475569">:  </tspan><tspan fill="#475569">[</tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">RabbitMQ</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">Elasticsearch</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">, </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">system design</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">]</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c7)"><text class="m" x="44" y="286"><tspan fill="#5EEAD4">  based</tspan><tspan fill="#475569">:     </tspan><tspan fill="#64748B">"</tspan><tspan fill="#CBD5E1">6th of October City, Giza, Egypt</tspan><tspan fill="#64748B">"</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c8)"><text class="m" x="44" y="314"><tspan fill="#5EEAD4">  available</tspan><tspan fill="#475569">: </tspan><tspan fill="#4ADE80">true</tspan><tspan fill="#475569">,</tspan></text></g>
+    <g clip-path="url(#c9)"><text class="m" x="44" y="342"><tspan fill="#475569">};</tspan></text></g>
+
+    <text class="m" x="44" y="408"><tspan fill="#475569">$ </tspan></text>
+    <rect x="62" y="394" width="9" height="18" fill="#5EEAD4">
+      <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+
+    <rect x="0" y="436" width="1000" height="4" fill="url(#edge)"/>
+    <rect x="0.75" y="0.75" width="998.5" height="438.5" rx="15.25" fill="none" stroke="#1F2A3A" stroke-width="1.5"/>
+  </g>
+</svg>
