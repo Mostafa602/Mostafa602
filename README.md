@@ -98,8 +98,8 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship clearing Mostafa's GitHub contribution graph, one commit at a time" />
+<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship sweeping across Mostafa's entire GitHub contribution history, clearing it week by week" />
 
-<sub>Every green square is a day I committed. Regenerated daily by <a href="https://github.com/czl9707/gh-space-shooter">gh-space-shooter</a>.</sub>
+<sub>Every contribution since January 2023, cleared left to right. Regenerated daily by <a href="https://github.com/czl9707/gh-space-shooter">gh-space-shooter</a>.</sub>
 
 </div>
