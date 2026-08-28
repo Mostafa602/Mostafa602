@@ -91,3 +91,15 @@
 - 🔐 &nbsp;**Session handoff** — parsed signed-in user cookies from the host site into a React auth context, attaching bearer tokens and device identifiers to API calls so wishlist actions attribute to the right user.
 - 🧱 &nbsp;**Landing-page builder + publishing REST API** (Node · Express · MongoDB) for the marketing and SEO team: drag-and-drop composition, a persistent block library, and page CRUD with request validation.
 - 🧠 &nbsp;Picked up **Go**, **RabbitMQ** and **Elasticsearch** alongside the backend team, working in a shared codebase with feature branches, pull requests and code review.
+
+<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/rule.svg" width="100%" alt="" />
+
+## 🚀 &nbsp;My contribution graph, but it shoots back
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship clearing Mostafa's GitHub contribution graph, one commit at a time" />
+
+<sub>Every green square is a day I committed. Regenerated daily by <a href="https://github.com/czl9707/gh-space-shooter">gh-space-shooter</a>.</sub>
+
+</div>

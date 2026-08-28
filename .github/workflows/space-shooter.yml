@@ -1,0 +1,36 @@
+# Redraws the contribution graph as a playable-looking space shooter and
+# commits the GIF back to this repo. The README links to assets/space-shooter.gif.
+name: Space shooter
+
+on:
+  schedule:
+    - cron: "17 3 * * *"   # daily, 03:17 UTC
+  workflow_dispatch:        # and on demand from the Actions tab
+  push:
+    branches: [main]
+    paths-ignore:
+      - "assets/space-shooter.gif"   # belt and braces: never react to its own output
+
+permissions:
+  contents: write
+
+concurrency:
+  group: space-shooter
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2    # required: lets the action amend its own last commit
+
+      - uses: czl9707/gh-space-shooter@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: Mostafa602
+          output-path: assets/space-shooter.gif
+          strategy: random
+          fps: "40"
+          commit-message: "Update space shooter"
