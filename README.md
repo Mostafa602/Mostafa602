@@ -94,12 +94,8 @@
 
 <img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/rule.svg" width="100%" alt="" />
 
-## 🚀 &nbsp;My contribution graph, but it shoots back
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship sweeping across Mostafa's entire GitHub contribution history, clearing it week by week" />
-
-<sub>Every contribution since January 2023, cleared left to right. Regenerated daily by <a href="https://github.com/czl9707/gh-space-shooter">gh-space-shooter</a>.</sub>
 
 </div>
