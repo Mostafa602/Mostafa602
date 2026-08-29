@@ -96,6 +96,6 @@
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship sweeping across Mostafa's entire GitHub contribution history, clearing it week by week" />
+<img src="https://raw.githubusercontent.com/Mostafa602/Mostafa602/main/assets/space-shooter.gif" alt="A spaceship sweeping across Mostafa's GitHub contribution graph for the past year, clearing it square by square" />
 
 </div>
