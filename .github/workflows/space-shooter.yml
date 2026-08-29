@@ -1,10 +1,5 @@
-# Redraws the whole contribution history as a space shooter and commits the GIF
-# back to this repo. The README links to assets/space-shooter.gif.
-#
-# gh-space-shooter only ever fetches the last 52 weeks and hard-codes that width
-# into the renderer, so this workflow does the fetching itself (every year the
-# account has existed, merged into one gap-free grid) and feeds the result in
-# through --raw-input, widening NUM_WEEKS to match.
+# Redraws the contribution graph as a playable-looking space shooter and
+# commits the GIF back to this repo. The README links to assets/space-shooter.gif.
 name: Space shooter
 
 on:
@@ -23,59 +18,19 @@ concurrency:
   group: space-shooter
   cancel-in-progress: true
 
-env:
-  GIF: assets/space-shooter.gif
-  MSG: Update space shooter
-
 jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2    # enough history to amend yesterday's commit
+          fetch-depth: 2    # required: lets the action amend its own last commit
 
-      - uses: actions/setup-python@v5
+      - uses: czl9707/gh-space-shooter@v2
         with:
-          python-version: "3.12"
-
-      - run: pip install --quiet gh-space-shooter
-
-      - name: Fetch every year of contributions
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python .github/scripts/fetch_all_time.py Mostafa602 all-time.json
-
-      - name: Widen the renderer to the full history
-        run: |
-          weeks=$(python -c "import json;print(len(json.load(open('all-time.json'))['weeks']))")
-          constants=$(python -c "import sysconfig,os;print(os.path.join(sysconfig.get_paths()['purelib'],'gh_space_shooter','constants.py'))")
-          sed -i "s/^NUM_WEEKS = .*/NUM_WEEKS = $weeks/" "$constants"
-          grep '^NUM_WEEKS' "$constants"
-
-      - name: Render
-        run: |
-          gh-space-shooter Mostafa602 \
-            --raw-input all-time.json \
-            --output "$GIF" \
-            --strategy column \
-            --fps 40
-          ls -lh "$GIF"
-
-      - name: Commit
-        run: |
-          git config user.name  "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add "$GIF"
-          git diff --staged --quiet && { echo "no change"; exit 0; }
-
-          # The GIF is ~1 MB and is rewritten daily, so fold each new one into
-          # the previous generated commit instead of stacking them up forever.
-          if [ "$(git log -1 --pretty=%s)" = "$MSG" ] \
-             && [ "$(git log -1 --name-only --pretty=format: | grep -v '^$')" = "$GIF" ]; then
-            git commit --amend --no-edit
-            git push --force-with-lease
-          else
-            git commit -m "$MSG"
-            git push
-          fi
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: Mostafa602
+          output-path: assets/space-shooter.gif
+          strategy: random
+          fps: "40"
+          commit-message: "Update space shooter"
